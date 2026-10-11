@@ -1,0 +1,4 @@
+telethon==1.36.0
+pypdf==4.2.0
+pillow==10.3.0
+aiohttp==3.9.5
