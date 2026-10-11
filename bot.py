@@ -30,11 +30,7 @@ TEMP_DIR = "pdf_temp"
 USERS_FILE = "users.json"
 os.makedirs(TEMP_DIR, exist_ok=True)
 
-if SESSION_STRING:
-    client = TelegramClient(StringSession(SESSION_STRING), API_ID, API_HASH)
-else:
-    client = TelegramClient('pdf_master_bot', API_ID, API_HASH)
-
+client = TelegramClient('pdf_master_bot', API_ID, API_HASH)
 user_pdfs = {}
 user_images = {}
 user_state = {}
